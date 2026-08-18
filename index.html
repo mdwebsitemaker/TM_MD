@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Zayron Herbal | Natural Herbal Products & Oils</title>
+
+    <meta name="description"
+          content="Zayron Herbal - Herbal products and natural oils inspired by traditional wellness.">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+
+<header class="header">
+
+    <div class="logo">
+        <span class="logo-mark">Z</span>
+        <div>
+            <h2>ZAYRON</h2>
+            <small>HERBAL</small>
+        </div>
+    </div>
+
+    <nav id="navbar">
+        <a href="#home">Home</a>
+        <a href="#products">Products</a>
+        <a href="#oils">Herbal Oils</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <button class="cart-button" onclick="openCart()">
+        🛒 Cart <span id="cartCount">0</span>
+    </button>
+
+    <button class="menu-button" onclick="toggleMenu()">☰</button>
+
+</header>
+
+
+<!-- ================= HERO ================= -->
+
+<section class="hero" id="home">
+
+    <div class="hero-content">
+
+        <p class="small-title">NATURAL • HERBAL • PREMIUM</p>
+
+        <h1>
+            Nature's Goodness,
+            <span>Beautifully Bottled.</span>
+        </h1>
+
+        <p>
+            Discover our collection of herbal products and natural oils,
+            thoughtfully created with nature-inspired ingredients.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="#products" class="gold-btn">Explore Products</a>
+            <a href="#about" class="outline-btn">Our Story</a>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FEATURES ================= -->
+
+<section class="features">
+
+    <div class="feature">
+        <div>🌿</div>
+        <h3>Herbal Inspired</h3>
+        <p>Nature-inspired products for your everyday routine.</p>
+    </div>
+
+    <div class="feature">
+        <div>✨</div>
+        <h3>Premium Quality</h3>
+        <p>Carefully selected ingredients and thoughtful presentation.</p>
+    </div>
+
+    <div class="feature">
+        <div>📦</div>
+        <h3>Secure Packaging</h3>
+        <p>Products packed with care for a better customer experience.</p>
+    </div>
+
+    <div class="feature">
+        <div>🤝</div>
+        <h3>Customer First</h3>
+        <p>We believe in simple, transparent and friendly service.</p>
+    </div>
+
+</section>
+
+
+<!-- ================= PRODUCTS ================= -->
+
+<section class="products-section" id="products">
+
+    <div class="section-heading">
+
+        <p>OUR COLLECTION</p>
+
+        <h2>Featured Herbal Products</h2>
+
+        <span>
+            Explore our nature-inspired collection.
+        </span>
+
+    </div>
+
+
+    <div class="filter-buttons">
+
+        <button onclick="filterProducts('all')">All</button>
+
+        <button onclick="filterProducts('oil')">
+            Herbal Oils
+        </button>
+
+        <button onclick="filterProducts('herbal')">
+            Herbal Products
+        </button>
+
+    </div>
+
+
+    <div class="products-grid" id="productGrid">
+
+
+        <!-- PRODUCT 1 -->
+
+        <div class="product-card" data-category="oil">
+
+            <div class="product-image">
+                <div class="product-placeholder">
+                    🌿
+                </div>
+
+                <span class="product-badge">
+                    BESTSELLER
+                </span>
+            </div>
+
+            <div class="product-info">
+
+                <small>HERBAL OIL</small>
+
+                <h3>Herbal Hair Oil</h3>
+
+                <p>
+                    A traditional herbal-inspired hair oil
+                    for your regular hair-care routine.
+                </p>
+
+                <div class="product-bottom">
+
+                    <strong>₹399</strong>
+
+                    <button onclick="addToCart('Herbal Hair Oil',399)">
+                        Add +
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- PRODUCT 2 -->
+
+        <div class="product-card" data-category="oil">
+
+            <div class="product-image">
+
+                <div class="product-placeholder">
+                    🫙
+                </div>
+
+            </div>
+
+            <div class="product-info">
+
+                <small>HERBAL OIL</small>
+
+                <h3>Natural Body Oil</h3>
+
+                <p>
+                    A botanical oil designed for
+                    a relaxing personal-care routine.
+                </p>
+
+                <div class="product-bottom">
+
+                    <strong>₹449</strong>
+
+                    <button onclick="addToCart('Natural Body Oil',449)">
+                        Add +
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- PRODUCT 3 -->
+
+        <div class="product-card" data-category="herbal">
+
+            <div class="product-image">
+
+                <div class="product-placeholder">
+                    🍃
+                </div>
+
+                <span class="product-badge">
+                    NEW
+                </span>
+
+            </div>
+
+            <div class="product-info">
+
+                <small>HERBAL PRODUCT</small>
+
+                <h3>Herbal Powder</h3>
+
+                <p>
+                    A carefully selected botanical
+                    powder for your everyday routine.
+                </p>
+
+                <div class="product-bottom">
+
+                    <strong>₹299</strong>
+
+                    <button onclick="addToCart('Herbal Powder',299)">
+                        Add +
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- PRODUCT 4 -->
+
+        <div class="product-card" data-category="herbal">
+
+            <div class="product-image">
+
+                <div class="product-placeholder">
+                    🌱
+                </div>
+
+            </div>
+
+            <div class="product-info">
+
+                <small>HERBAL PRODUCT</small>
+
+                <h3>Botanical Care Blend</h3>
+
+                <p>
+                    A nature-inspired blend made for
+                    simple everyday use.
+                </p>
+
+                <div class="product-bottom">
+
+                    <strong>₹349</strong>
+
+                    <button onclick="addToCart('Botanical Care Blend',349)">
+                        Add +
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= OILS ================= -->
+
+<section class="oil-section" id="oils">
+
+    <div class="oil-content">
+
+        <p class="small-title">
+            ZAYRON HERBAL OILS
+        </p>
+
+        <h2>
+            Purely Inspired
+            <br>
+            By Nature.
+        </h2>
+
+        <p>
+            Our herbal oil collection is inspired by traditional
+            botanical care and designed with a modern premium touch.
+        </p>
+
+        <a href="#products" class="gold-btn">
+            Shop Oils
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- ================= ABOUT ================= -->
+
+<section class="about-section" id="about">
+
+    <div class="about-image">
+        <div class="about-symbol">🌿</div>
+    </div>
+
+    <div class="about-content">
+
+        <p class="small-title">
+            ABOUT ZAYRON HERBAL
+        </p>
+
+        <h2>
+            Inspired by Nature.
+            Created for You.
+        </h2>
+
+        <p>
+            Zayron Herbal is a modern herbal brand focused on
+            nature-inspired products and oils.
+        </p>
+
+        <p>
+            Our goal is to combine a premium customer experience
+            with simple, thoughtful herbal products.
+        </p>
+
+        <div class="about-points">
+
+            <div>
+                <span>✓</span>
+                Nature-inspired ingredients
+            </div>
+
+            <div>
+                <span>✓</span>
+                Premium presentation
+            </div>
+
+            <div>
+                <span>✓</span>
+                Customer-focused service
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= REVIEWS ================= -->
+
+<section class="reviews">
+
+    <div class="section-heading">
+
+        <p>WHAT CUSTOMERS SAY</p>
+
+        <h2>Customer Love</h2>
+
+    </div>
+
+    <div class="review-grid">
+
+        <div class="review">
+            <div>★★★★★</div>
+
+            <p>
+                "Beautiful packaging and a very premium
+                shopping experience."
+            </p>
+
+            <strong>— A Customer</strong>
+        </div>
+
+
+        <div class="review">
+            <div>★★★★★</div>
+
+            <p>
+                "The product presentation is excellent
+                and ordering was simple."
+            </p>
+
+            <strong>— A Customer</strong>
+        </div>
+
+
+        <div class="review">
+            <div>★★★★★</div>
+
+            <p>
+                "I really liked the natural concept
+                of Zayron Herbal."
+            </p>
+
+            <strong>— A Customer</strong>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CONTACT ================= -->
+
+<section class="contact-section" id="contact">
+
+    <div class="section-heading">
+
+        <p>GET IN TOUCH</p>
+
+        <h2>Contact Zayron Herbal</h2>
+
+        <span>
+            Have a question? Send us a message.
+        </span>
+
+    </div>
+
+
+    <form id="contactForm">
+
+        <input
+            type="text"
+            id="name"
+            placeholder="Your Name"
+            required
+        >
+
+        <input
+            type="tel"
+            id="phone"
+            placeholder="Phone Number"
+            required
+        >
+
+        <input
+            type="email"
+            id="email"
+            placeholder="Email Address"
+        >
+
+        <textarea
+            id="message"
+            rows="5"
+            placeholder="Your Message"
+            required
+        ></textarea>
+
+        <button type="submit" class="gold-btn">
+            Send Message
+        </button>
+
+    </form>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <div class="footer-logo">
+
+        <div class="logo">
+            <span class="logo-mark">Z</span>
+
+            <div>
+                <h2>ZAYRON</h2>
+                <small>HERBAL</small>
+            </div>
+
+        </div>
+
+        <p>
+            Nature-inspired herbal products & oils.
+        </p>
+
+    </div>
+
+
+    <div class="footer-links">
+
+        <h3>Quick Links</h3>
+
+        <a href="#home">Home</a>
+        <a href="#products">Products</a>
+        <a href="#oils">Oils</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+
+    </div>
+
+
+    <div class="footer-contact">
+
+        <h3>Contact</h3>
+
+        <p>📱 +91 XXXXX XXXXX</p>
+
+        <p>✉️ hello@zayronherbal.com</p>
+
+        <p>📍 India</p>
+
+    </div>
+
+</footer>
+
+
+<div class="copyright">
+
+    © 2026 Zayron Herbal. All Rights Reserved.
+
+</div>
+
+
+<!-- ================= CART ================= -->
+
+<div class="cart-overlay" id="cartOverlay">
+
+    <div class="cart-box">
+
+        <button class="close-cart" onclick="closeCart()">
+            ×
+        </button>
+
+        <h2>Your Cart</h2>
+
+        <div id="cartItems"></div>
+
+        <div class="cart-total">
+
+            <span>Total</span>
+
+            <strong id="cartTotal">₹0</strong>
+
+        </div>
+
+        <button class="checkout-btn" onclick="checkout()">
+            Order on WhatsApp
+        </button>
+
+    </div>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
